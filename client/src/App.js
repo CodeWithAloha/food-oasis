@@ -34,6 +34,7 @@ import FaqAdd from "components/FaqAdd";
 import Home from "containers/Home";
 import Results from "components/Results/ResultsContainer";
 import Suggestion from "components/Suggestion";
+import ImportFile from "components/ImportFile";
 import newTheme from "./theme/newTheme";
 
 const useStyles = makeStyles({
@@ -215,6 +216,9 @@ function App() {
                     userCoordinates={userCoordinates}
                   />
                 </div>
+              </Route>
+              <Route path="/import">
+                <ImportFile user={user} />
               </Route>
               <Route path="/faqs/add">
                 <FaqAdd />
